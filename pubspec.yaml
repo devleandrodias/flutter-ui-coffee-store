@@ -49,6 +49,10 @@ flutter:
     - assets/icons/icon-coffee-latte.svg
     - assets/icons/icon-coffee-macchiato.svg
     - assets/icons/icon-coffee-mocha.svg
+    - assets/icons/icon-cup.svg
+    - assets/icons/icon-home.svg
+    - assets/icons/icon-location.svg
+    - assets/icons/icon-profile.svg
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
   # For details regarding adding assets from package dependencies, see
