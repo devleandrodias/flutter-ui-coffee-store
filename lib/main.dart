@@ -9,6 +9,7 @@ class CoffeeShopApp extends StatelessWidget {
     return MaterialApp(
       title: 'Coffee Store',
       home: MyHomePage(),
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primaryColor: Color.fromRGBO(250, 244, 238, 1),
         appBarTheme: AppBarTheme(
@@ -38,7 +39,17 @@ class _MyHomePageState extends State<MyHomePage> {
       backgroundColor: Theme.of(context).primaryColor,
       body: Column(
         children: <Widget>[
-          Text('It\'s Great Day for Coffee.'),
+          Padding(
+            padding: const EdgeInsets.fromLTRB(30, 5, 25, 0),
+            child: Text(
+              'It\'s Great Day for Coffee.',
+              style: TextStyle(
+                fontSize: 36,
+                fontFamily: 'Sen',
+                fontWeight: FontWeight.w300,
+              ),
+            ),
+          ),
           CoffeeList(),
         ],
       ),
