@@ -37,21 +37,23 @@ class _MyHomePageState extends State<MyHomePage> {
         ],
       ),
       backgroundColor: Theme.of(context).primaryColor,
-      body: Column(
-        children: <Widget>[
-          Padding(
-            padding: const EdgeInsets.fromLTRB(30, 5, 25, 0),
-            child: Text(
-              'It\'s Great Day for Coffee.',
-              style: TextStyle(
-                fontSize: 36,
-                fontFamily: 'Sen',
-                fontWeight: FontWeight.w300,
+      body: Container(
+        child: Column(
+          children: <Widget>[
+            Padding(
+              padding: const EdgeInsets.fromLTRB(30, 5, 25, 0),
+              child: Text(
+                'It\'s Great Day for Coffee.',
+                style: TextStyle(
+                  fontSize: 36,
+                  fontFamily: 'Sen',
+                  fontWeight: FontWeight.w300,
+                ),
               ),
             ),
-          ),
-          CoffeeList(),
-        ],
+            CoffeeList(),
+          ],
+        ),
       ),
       bottomNavigationBar: BottomNavigationBar(
         elevation: 1,

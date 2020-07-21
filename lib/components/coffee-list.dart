@@ -30,10 +30,13 @@ class CoffeeList extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SingleChildScrollView(
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.stretch,
-        children: <Widget>[...coffeeList],
+    return Container(
+      height: 600,
+      child: SingleChildScrollView(
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: <Widget>[...coffeeList],
+        ),
       ),
     );
   }
