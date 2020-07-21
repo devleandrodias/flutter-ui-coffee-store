@@ -16,12 +16,18 @@ class CoffeeCard extends StatelessWidget {
       color: Theme.of(context).primaryColor,
       elevation: 0,
       child: Container(
-        padding: EdgeInsets.all(30),
+        padding: EdgeInsets.all(28),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: <Widget>[
             SvgPicture.asset(imagePath),
-            Text(coffee),
+            Text(
+              coffee,
+              style: TextStyle(
+                fontSize: 20,
+                fontFamily: 'Sen',
+              ),
+            ),
             Icon(
               Icons.arrow_forward_ios,
               color: Color.fromRGBO(198, 154, 128, 1),

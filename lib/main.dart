@@ -41,13 +41,15 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           children: <Widget>[
             Padding(
-              padding: const EdgeInsets.fromLTRB(30, 5, 25, 0),
-              child: Text(
-                'It\'s Great Day for Coffee.',
-                style: TextStyle(
-                  fontSize: 36,
-                  fontFamily: 'Sen',
-                  fontWeight: FontWeight.w300,
+              padding: const EdgeInsets.fromLTRB(28, 5, 25, 0),
+              child: Container(
+                child: Text(
+                  'It\'s Great Day for Coffee.',
+                  style: TextStyle(
+                    fontSize: 36,
+                    fontFamily: 'Sen',
+                    fontWeight: FontWeight.w300,
+                  ),
                 ),
               ),
             ),
