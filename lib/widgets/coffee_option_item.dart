@@ -19,12 +19,10 @@ class CoffeeOptionItem extends StatelessWidget {
         );
       },
       child: Padding(
-        padding: const EdgeInsets.symmetric(
-          horizontal: 4,
-          vertical: 35,
-        ),
+        padding: EdgeInsets.symmetric(vertical: 30),
         child: ListTile(
           leading: Container(
+            alignment: Alignment.centerLeft,
             width: 90,
             child: SvgPicture.asset(
               coffee.iconUrl,
@@ -33,6 +31,7 @@ class CoffeeOptionItem extends StatelessWidget {
           title: Text(
             coffee.title,
             style: Theme.of(context).textTheme.headline6,
+            textAlign: TextAlign.start,
           ),
           trailing: Padding(
             padding: const EdgeInsets.all(5.0),

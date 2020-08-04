@@ -4,7 +4,7 @@ class Coffee {
   final String iconUrl;
   final String title;
 
-  Coffee({
+  const Coffee({
     @required this.iconUrl,
     @required this.title,
   });

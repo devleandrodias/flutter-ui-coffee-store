@@ -1,4 +1,5 @@
 import 'package:coffee_store/models/coffee.dart';
+import 'package:coffee_store/widgets/drawer_main.dart';
 import 'package:flutter/material.dart';
 
 class CoffeeDetailScreen extends StatelessWidget {
@@ -9,6 +10,7 @@ class CoffeeDetailScreen extends StatelessWidget {
       appBar: AppBar(
         title: Text(coffee.title),
       ),
+      drawer: MainDrawer(),
     );
   }
 }
