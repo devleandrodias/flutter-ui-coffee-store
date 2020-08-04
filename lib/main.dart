@@ -1,4 +1,6 @@
+import 'package:coffee_store/screens/coffee_detail_screen.dart';
 import 'package:coffee_store/screens/coffee_list_screen.dart';
+import 'package:coffee_store/utils/app_routes.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(CoffeeShopApp());
@@ -23,6 +25,9 @@ class CoffeeShopApp extends StatelessWidget {
               ),
             ),
       ),
+      routes: {
+        AppRoutes.COFFEE_DETAIL: (_) => CoffeeDetailScreen(),
+      },
     );
   }
 }
