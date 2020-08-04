@@ -15,7 +15,7 @@ class CoffeeOptionsList extends StatelessWidget {
         final coffee = coffees[index];
         return Padding(
           padding: const EdgeInsets.symmetric(
-            horizontal: 10,
+            horizontal: 4,
             vertical: 35,
           ),
           child: ListTile(
@@ -29,10 +29,13 @@ class CoffeeOptionsList extends StatelessWidget {
               coffee.title,
               style: Theme.of(context).textTheme.headline6,
             ),
-            trailing: Icon(
-              Icons.arrow_forward_ios,
-              size: 15,
-              color: Color.fromRGBO(198, 154, 128, 1),
+            trailing: Padding(
+              padding: const EdgeInsets.all(5.0),
+              child: Icon(
+                Icons.arrow_forward_ios,
+                size: 15,
+                color: Color.fromRGBO(198, 154, 128, 1),
+              ),
             ),
           ),
         );

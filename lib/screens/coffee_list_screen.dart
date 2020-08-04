@@ -1,4 +1,5 @@
 import 'package:coffee_store/models/coffee.dart';
+import 'package:coffee_store/widgets/bottom_navigation_tabs.dart';
 import 'package:coffee_store/widgets/coffee_options_list.dart';
 import 'package:flutter/material.dart';
 
@@ -33,7 +34,7 @@ class CoffeeListScreen extends StatelessWidget {
     ],
   );
 
-  Widget _principalTitle = Padding(
+  Widget _principalTitle = Container(
     padding: const EdgeInsets.fromLTRB(28, 5, 25, 0),
     child: Container(
       child: Text(
@@ -50,10 +51,10 @@ class CoffeeListScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // appBar: _appBar,
+      appBar: _appBar,
       backgroundColor: Theme.of(context).primaryColor,
       body: CoffeeOptionsList(_coffeeList),
-      bottomNavigationBar: null,
+      bottomNavigationBar: BottomNavigationTabs(),
     );
   }
 }
