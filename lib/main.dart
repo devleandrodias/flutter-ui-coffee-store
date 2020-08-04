@@ -19,6 +19,7 @@ class CoffeeShopApp extends StatelessWidget {
         textTheme: ThemeData.light().textTheme.copyWith(
               headline6: TextStyle(
                 color: Color.fromRGBO(45, 20, 13, 1),
+                fontFamily: 'Sen',
               ),
             ),
       ),
